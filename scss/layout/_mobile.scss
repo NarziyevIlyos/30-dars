@@ -1,0 +1,113 @@
+@import "../mixins/media-mixins";
+
+@include mobile() {
+  // HEADER
+  .mobile-none {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  }
+  // HEADER
+
+  // HERO
+  .hero {
+    padding: 0px 0px 8px 0px;
+    padding-bottom: 8px;
+  }
+  .hero__img {
+    height: 713px;
+  }
+  .hero__info {
+    top: 48px;
+  }
+  // HERO
+
+  // EXPLORE
+
+  .explore {
+    padding: 0px 0px 32px 0px;
+  }
+  .explore__title {
+    text-align: center;
+  }
+  .explore__desc {
+    text-align: center;
+  }
+  .explore__cards {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    place-items: center;
+  }
+  // EXPLORE
+
+  //   PARTNERS
+  .partners {
+    padding: 32px 0px 64px;
+  }
+  .partners__wrapper {
+    row-gap: 48px;
+  }
+  .partners__img img {
+    display: block;
+  }
+  .border-right {
+    border-right: 1px solid #e6e8ec;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #e6e8ec;
+  }
+  .mobile-border-right-none {
+    border-right: none;
+  }
+  //   PARTNERS
+
+  // FOOTER
+
+  .footer {
+    padding: 64px 0px 24px 0px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    border-bottom: 2px solid #f4f5f6;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .footer__copyright {
+    margin-top: 25px;
+  }
+
+  .menu-item:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  } /* About */
+  .menu-item:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+  } /* Press */
+  .menu-item:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  } /* Projects */
+  .menu-item:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+  } /* Jobs */
+  .menu-item:nth-child(5) {
+    grid-column: 2;
+    grid-row: 1;
+  } /* What We Do */
+  .menu-item:nth-child(6) {
+    grid-column: 2;
+    grid-row: 3;
+  } /* Download */
+
+  // FOOTER
+}

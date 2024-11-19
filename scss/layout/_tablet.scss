@@ -1,0 +1,61 @@
+@import "../mixins/media-mixins";
+
+@include tablet() {
+  // HEADER
+  .header {
+  }
+  .tablet-none {
+    display: none;
+  }
+  // HEADER
+
+  // HERO
+  .hero {
+    padding-bottom: 60px;
+  }
+
+  .hero__container {
+    margin: 0 auto;
+  }
+  .hero__img {
+    height: 610px;
+  }
+  .hero__info {
+    top: 125px;
+  }
+  .hero__title {
+  }
+
+  .hero__linear-gradient {
+    height: 485px;
+  }
+  // HERO
+
+  // EXPLORE
+  .explore {
+    padding: 60px 0px 56px 0px;
+  }
+  // EXPLORE
+
+  //   PARTNERS
+
+  .partners {
+    padding: 32px 0px 64px;
+  }
+  .container {
+  }
+  .partners__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .partners__img {
+  }
+  .border-right {
+    border-right: 1px solid #e6e8ec;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #e6e8ec;
+  }
+  //   PARTNERS
+}

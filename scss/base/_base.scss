@@ -1,0 +1,121 @@
+@import "../variables/colors";
+@import "../mixins/media-mixins";
+
+body {
+  background-color: #FCFCFD;
+  color: $primary-color;
+}
+
+
+h1 {
+  //styleName: Headline 1;
+  font-family: DM Sans;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  
+  color: $secondary-color;
+}
+
+@include tablet(){
+
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+
+@include mobile(){
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.02em;
+  }
+}
+
+h2 {
+  //styleName: Headline 2;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: $secondary-color;
+}
+
+@include tablet(){
+  h2 {
+    font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  }
+
+}
+
+@include mobile(){
+  h2 {
+    //styleName: Headline 3;
+    font-family: DM Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+  }
+}
+
+h4 {
+  //styleName: Body 1 (Bold);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+
+
+p {
+  //styleName: Body 1;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+
+  color: $primary-color;
+}
+
+
+
+@include tablet() {
+  p {
+    
+  }
+}
+
+@include mobile() {
+  p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  }
+}
+
+.bg-blue {
+  background-color: #4452fe;
+}
+
+.sub-title {
+  
+}
+
+@include mobile() {
+  .sub-title {
+    
+  }
+}
+

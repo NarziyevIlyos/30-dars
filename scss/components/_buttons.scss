@@ -1,0 +1,32 @@
+@import "../variables/colors";
+@import "../mixins/media-mixins";
+
+.btn {
+    padding: 12px 24px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+
+    border: 2px solid #E6E8EC;
+    border-radius: 24px;  
+}
+
+// @include mobile() {
+//     .btn {
+//         padding: 10px 35px;
+//         font-size: 12px;
+//         line-height: 18px;      
+//     }
+//   }
+
+.btn-white {
+    background-color: #ffffff;
+    color:  #377DFF;
+}
+
+.btn-blue {
+    background-color: #377DFF ;
+    color: #ffffff ;
+}
+
